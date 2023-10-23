@@ -1,8 +1,11 @@
 from sqlalchemy import func
-import model, schema, oauth
+from .. import model
+from .. import schema
+from .. import oauth
+# import model, schema, oauth
 from fastapi import FastAPI, Depends, Response, status, HTTPException, APIRouter
 from sqlalchemy.orm import Session
-from databasetest import engine, get_db
+from ..databasetest import engine, get_db
 from typing import List, Optional
 
 router = APIRouter(

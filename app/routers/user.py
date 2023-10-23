@@ -1,7 +1,7 @@
-import model, schema, utils
+from .. import model, schema, utils
 from fastapi import FastAPI, Depends, Response, status, HTTPException, APIRouter
 from sqlalchemy.orm import Session
-from databasetest import engine, get_db
+from ..databasetest import engine, get_db
 
 router = APIRouter(
     tags=['Users']
