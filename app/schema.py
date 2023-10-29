@@ -1,6 +1,8 @@
 from pydantic import BaseModel, EmailStr, conint
 from datetime import datetime
 from typing import Optional
+from annotated_types import Interval
+from sqlalchemy import Interval
 class PostBase(BaseModel):
     title: str
     content: str
@@ -42,4 +44,4 @@ class TokenData(BaseModel):
 
 class Vote(BaseModel):
     post_id: int
-    dir: conint(le=1)
+    # dir: Interval(gt=0, le=2)
