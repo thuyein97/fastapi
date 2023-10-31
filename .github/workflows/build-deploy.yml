@@ -77,5 +77,5 @@ jobs:
         # port: ${{ secrets.PORT }}
         script: |
           cd app/src
-          git pull
+          sudo git pull
           echo ${{ secrets.PASSWORD }} | sudo -S systemctl restart api
