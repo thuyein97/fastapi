@@ -75,7 +75,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: |
-          cd app/src
-          git pull
-          sudo systemctl restart api
+        script: echo "HEEHEE"
+          # cd app/src
+          # git pull
+          # sudo systemctl restart api
