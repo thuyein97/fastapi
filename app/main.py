@@ -23,4 +23,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World, GOOD NIGHT!!!!!"}
+    return {"message": "Hello World, YOU CAN RELAX NOW!!!!!"}
