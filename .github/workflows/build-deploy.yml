@@ -69,12 +69,12 @@ jobs:
     # needs: [Build]
     steps:
     - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@v1.0.0
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+        # port: ${{ secrets.PORT }}
         script: echo "HEEHEE"
           # cd app/src
           # git pull
